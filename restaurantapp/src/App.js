@@ -1,11 +1,20 @@
 import './App.css';
+import { NavBar } from './components';
+import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, Menu } from './container';
 
-function App() {
-  return (
-    <div className="App">
-      <h2>App</h2>
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <NavBar />
+    <Header />
+    <AboutUs />
+    <Menu />
+    <Chef />
+    <Intro />
+    <Laurels />
+    <Gallery />
+    <FindUs />
+    <Footer />
+  </div>
+);
 
 export default App;
