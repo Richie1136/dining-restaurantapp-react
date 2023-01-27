@@ -1,9 +1,13 @@
 import './SubHeading.css'
+import { images } from '../../constants'
 
-const SubHeading = () => {
+const SubHeading = ({ title }) => {
   return (
-    <div>SubHeading</div>
+    <div style={{ marginBottom: '1rem' }}>
+      <p className='p-cormorant'>{title}</p>
+      <img src={images.spoon} alt='spoon' className='spoon-image' />
+    </div>
   )
 }
 
-export default SubHeading
+export default SubHeading 
