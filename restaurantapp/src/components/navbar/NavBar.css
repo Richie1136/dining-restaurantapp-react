@@ -71,3 +71,22 @@
   flex-direction: column;
   z-index: 5;
 }
+
+.app-navbar-smallscreen-overlay .overlay-close {
+  font-size: 27px;
+  color: var(--color-golden);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+  .app-navbar-links {
+    display: none;
+  }
+
+  .app-navbar-smallscreen {
+    display: flex;
+  }
+}

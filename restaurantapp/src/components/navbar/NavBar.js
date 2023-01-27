@@ -2,6 +2,7 @@ import './NavBar.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineRestaurantMenu } from 'react-icons/md'
 import images from '../../constants/images'
+import { useState } from 'react'
 
 const ItemList = () => (
   <>
@@ -14,6 +15,9 @@ const ItemList = () => (
 )
 
 const NavBar = () => {
+
+  const [toggleMenu, setToggleMenu] = useState(false)
+
   return (
     <nav className='app-navbar'>
       <div className='app-navbar-logo'>
@@ -28,13 +32,15 @@ const NavBar = () => {
         <a href='/' className='p-opensans'>Book Table</a>
       </div>
       <div className='app-navbar-smallscreen'>
-        <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => {}} />
-        <div className='app-navbar-smallscreen-overlay flex-center slide-bottom'>
-          <MdOutlineRestaurantMenu className='overlay-close' onClick={() => {}} fontSize={27} />
-          <ul className='app-navbar-smallscreen-links'>
-            <ItemList />
-          </ul>
-        </div>
+        <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => setToggleMenu(true)} />
+        {toggleMenu && (
+          <div className='app-navbar-smallscreen-overlay flex-center slide-bottom'>
+            <MdOutlineRestaurantMenu className='overlay-close' onClick={() => setToggleMenu(false)} fontSize={27} />
+            <ul className='app-navbar-smallscreen-links'>
+              <ItemList />
+            </ul>
+          </div>
+        )}
       </div>
     </nav>
   )
