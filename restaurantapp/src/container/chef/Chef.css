@@ -34,4 +34,23 @@
   font-size: 32px;
   line-height: 41px;
   letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: var(--color-golden);
+}
+
+.app-chef-sign img {
+  width: 250px;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 2000px) {
+  .app-chef-sign img {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app-chef-sign img {
+    width: 80%;
+  }
 }
