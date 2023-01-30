@@ -14,8 +14,9 @@ const Intro = () => {
 
     if (playVideo) {
       videoRef.current.pause()
+    } else {
+      videoRef.current.play()
     }
-    videoRef.current.play()
   }
 
   return (
