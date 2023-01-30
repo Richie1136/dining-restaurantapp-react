@@ -1,3 +1,22 @@
-.app-specialMenu {}
+.app-specialMenu {
+  flex-direction: column;
+  background: var(--color-black);
+}
 
-.app-specialMenu-title {}
+.app-specialMenu-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.app-specialMenu-mwnu {
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.app-specialMenu-mwnu-img {}
+
+.app-specialMenu-mwnu-img img {}

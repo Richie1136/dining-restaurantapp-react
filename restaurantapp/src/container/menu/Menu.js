@@ -13,11 +13,26 @@ const Menu = () => {
         <div className='app-specialMenu-menu-wine flex-center'>
           <p className='app-specialMenu-mwnu-heading'>Wine & Beer</p>
           <div className='app-specialMenu-mwnu-items'>
-            {data.wines.map(({ title, price }) => (
-              <p>{title}</p>
+            {data.wines.map(({ title, price, tags, index }) => (
+              <MenuItem key={index + 1} title={title} price={price} tags={tags} />
+
             ))}
           </div>
         </div>
+        <div className='app-specialMenu-mwnu-img'>
+          <img src={images.menu} alt='img of the menu' />
+        </div>
+        <div className='app-specialMenu-menu-cocktails flex-center'>
+          <p className='app-specialMenu-mwnu-heading'>Cocktails</p>
+          <div className='app-specialMenu-mwnu-items'>
+            {data.cocktails.map(({ index, title, price, tags }) => (
+              <MenuItem key={index + 1} title={title} price={price} tags={tags} />
+            ))}
+          </div>
+        </div>
+      </div>
+      <div style={{ marginTop: '15px' }}>
+        <button type='button' className='custom-button'>View More</button>
       </div>
     </div>
   )
