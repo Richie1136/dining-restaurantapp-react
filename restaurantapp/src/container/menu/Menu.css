@@ -51,14 +51,12 @@
 }
 
 @media screen and (max-width: 2000px) {
-  .app-specialMenu-menu {
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
+  .app-specialMenu-menu-img {
+    width: 650px;
   }
 
-  .app-specialMenu-menu-img {
-    margin: 3rem 0;
+  .app-specialMenu-menu-img img {
+    height: 920px;
   }
 }
 
