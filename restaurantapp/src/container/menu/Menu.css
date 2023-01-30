@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.app-specialMenu-mwnu {
+.app-specialMenu-menu {
   width: 100%;
   margin: 2rem 0;
   display: flex;
@@ -17,6 +17,72 @@
   flex-direction: row;
 }
 
-.app-specialMenu-mwnu-img {}
+.app-specialMenu-menu-heading {
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 58.5px;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+}
 
-.app-specialMenu-mwnu-img img {}
+.app-specialMenu-menu-wine,
+.app-specialMenu-menu-cocktails {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.app-specialMenu-menu-img {
+  width: 410px;
+  margin: 0 2rem;
+}
+
+.app-specialMenu-menu-img img {
+  width: 100%;
+  height: auto;
+}
+
+.app-specialMenu-menu-items {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 2000px) {
+  .app-specialMenu-menu {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .app-specialMenu-menu-img {
+    margin: 3rem 0;
+  }
+}
+
+
+@media screen and (max-width: 1150px) {
+  .app-specialMenu-menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .app-specialMenu-menu-img {
+    margin: 3rem 0;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .app-specialMenu-menu-img {
+    width: 100%;
+  }
+
+  .app-specialMenu-menu-heading {
+    font-size: 35px;
+    line-height: 48.5px;
+  }
+}

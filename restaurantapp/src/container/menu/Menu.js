@@ -9,10 +9,10 @@ const Menu = () => {
         <SubHeading title="Menu That Fits Your Palatte" />
         <h1 className='headtext-cormorant'>Today's Special</h1>
       </div>
-      <div className='app-specialMenu-mwnu'>
+      <div className='app-specialMenu-menu'>
         <div className='app-specialMenu-menu-wine flex-center'>
-          <p className='app-specialMenu-mwnu-heading'>Wine & Beer</p>
-          <div className='app-specialMenu-mwnu-items'>
+          <p className='app-specialMenu-menu-heading'>Wine & Beer</p>
+          <div className='app-specialMenu-menu-items'>
             {data.wines.map(({ title, price, tags, index }) => (
               <MenuItem key={index + 1} title={title} price={price} tags={tags} />
 
@@ -23,8 +23,8 @@ const Menu = () => {
           <img src={images.menu} alt='img of the menu' />
         </div>
         <div className='app-specialMenu-menu-cocktails flex-center'>
-          <p className='app-specialMenu-mwnu-heading'>Cocktails</p>
-          <div className='app-specialMenu-mwnu-items'>
+          <p className='app-specialMenu-menu-heading'>Cocktails</p>
+          <div className='app-specialMenu-menu-items'>
             {data.cocktails.map(({ index, title, price, tags }) => (
               <MenuItem key={index + 1} title={title} price={price} tags={tags} />
             ))}
