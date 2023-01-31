@@ -132,4 +132,9 @@
   .app-gallery-content {
     min-width: 100%;
   }
+
+  .app-gallery-images-card {
+    min-width: 240px;
+    height: 320px;
+  }
 }
