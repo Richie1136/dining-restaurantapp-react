@@ -1,9 +1,13 @@
 import './Footer.css'
 
-const Footer = () => {
+const FooterOverlay = () => {
   return (
-    <div>Footer</div>
+    <div className='app-footerOverlay'>
+      <div className='app-footerOverlay-black' />
+      <div className='app-footerOverlay-img app-bg' />
+
+    </div>
   )
 }
 
-export default Footer
+export default FooterOverlay

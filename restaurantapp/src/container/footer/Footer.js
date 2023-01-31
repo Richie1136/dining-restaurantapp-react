@@ -1,8 +1,14 @@
 import './Footer.css'
+import { Newsletter, FooterOverlay } from '../../components'
+import { FiInstagram, FiFacebook, FiTwitter } from 'react-icons/fi'
+
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='app-footer section-padding'>
+      <FooterOverlay />
+      <Newsletter />
+    </div>
   )
 }
 
